@@ -11,6 +11,7 @@ https://axoniq.io/
 
 to run
 java -jar axonserver-4.4.jar
+ test
 
 
 
