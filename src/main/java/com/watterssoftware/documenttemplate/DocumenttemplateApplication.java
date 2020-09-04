@@ -9,5 +9,4 @@ public class DocumenttemplateApplication {
     public static void main(String[] args) {
         SpringApplication.run(DocumenttemplateApplication.class, args);
     }
-
 }
