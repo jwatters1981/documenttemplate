@@ -15,7 +15,11 @@
     <description>Service that manages Document Templates</description>
     <properties>
         <java.version>11</java.version>
+            <sonar.projectKey>jwatters1981_documenttemplate</sonar.projectKey>
+            <sonar.organization>jwatters1981</sonar.organization>
+            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
