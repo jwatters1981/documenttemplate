@@ -23,13 +23,14 @@ public class DocumentTemplateProjection {
 
     @EventHandler
     public void on(CreateDocumentTemplateEvent event) {
-        log.debug("Handling a Bank Account creation command {}", event.getDocumentTemplateID());
+        log.info("Handling CreateDocumentTemplateEvent {}", event.getDocumentTemplateID());
         DocumentTemplate documentTemplate = new DocumentTemplate(
                 event.getDocumentTemplateID(),
                 event.getDocumentTemplateName(),
                 event.getUserId(), new Date(), event.getContentData());
 
         this.repository.save(documentTemplate);
+        log.info("Document Template Saved "+documentTemplate.getDocumentTemplateId());
     }
 
     @EventHandler
@@ -45,7 +46,7 @@ public class DocumentTemplateProjection {
 
     @QueryHandler
     public DocumentTemplate handle(FindDocumentTemplateQuery query) {
-        log.debug("Handling FindBankAccountQuery query: {}", query);
+        log.debug("Handling FindDocumentTemplateQuery query: {}", query);
         return this.repository.findById(query.getDocumentTemplateId()).orElseThrow();
     }
 }
