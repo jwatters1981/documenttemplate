@@ -15,9 +15,11 @@
     <description>Service that manages Document Templates</description>
     <properties>
         <java.version>11</java.version>
-            <sonar.projectKey>jwatters1981_documenttemplate</sonar.projectKey>
-            <sonar.organization>jwatters1981</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <sonar.projectKey>jwatters1981_documenttemplate</sonar.projectKey>
+        <sonar.organization>jwatters1981</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
