@@ -1,9 +1,10 @@
 JDK 11 needed
 
-Built using Maven 3 https://maven.apache.org/download.cgi
+run the below to build
 
-Bulild
-mvn clean install
+mvnw.cmd install
+
+
 to run right click and run this class DocumenttemplateApplication
 
 Event sourcing framework download from below
